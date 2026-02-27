@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 12th Admission Form - CBSE</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    margin: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 850px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row div {
+    flex: 1;
+}
+
+.gender {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.upload-section {
+    background: #f8f9fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+button {
+    background: #4e73df;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1cc88a;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Class 12th Admission Form (CBSE Board)</h2>
+
+<form enctype="multipart/form-data">
+
+<label>Student Full Name</label>
+<input type="text" required>
+
+<div class="row">
+<div>
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+<div>
+<label>Gender</label>
+<div class="gender">
+<label><input type="radio" name="gender" required> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+<label><input type="radio" name="gender"> Other</label>
+</div>
+</div>
+</div>
+
+<label>Father's Name</label>
+<input type="text" required>
+
+<label>Mother's Name</label>
+<input type="text" required>
+
+<label>Mobile Number</label>
+<input type="tel" required>
+
+<label>Email ID</label>
+<input type="email">
+
+<label>Address</label>
+<textarea rows="3"></textarea>
+
+<label>Previous School Name</label>
+<input type="text">
+
+<label>Class 10 Roll Number</label>
+<input type="text">
+
+<label>Class 10 Board</label>
+<select required>
+<option value="">Select Board</option>
+<option>CBSE</option>
+<option>ICSE</option>
+<option>State Board</option>
+</select>
+
+<label>Class 10 Percentage</label>
+<input type="number">
+
+<label>Select Stream (Class 12)</label>
+<select required>
+<option value="">Select Stream</option>
+<option>Science (PCM)</option>
+<option>Science (PCB)</option>
+<option>Commerce</option>
+<option>Arts</option>
+</select>
+
+<div class="upload-section">
+
+<h3>Upload Required Documents</h3>
+
+<label>Upload Student Photo (Passport Size)</label>
+<input type="file" accept="image/*" required>
+
+<label>Upload Aadhaar Card</label>
+<input type="file" accept=".pdf,image/*" required>
+
+<label>Upload Class 10 Marksheet</label>
+<input type="file" accept=".pdf,image/*" required>
+
+<label>Upload Transfer Certificate (TC)</label>
+<input type="file" accept=".pdf,image/*" required>
+
+<label>Upload Signature</label>
+<input type="file" accept="image/*" required>
+
+</div>
+
+<button type="submit">Submit Admission Form</button>
+
+</form>
+
+<footer>
+© 2026 All Rights Reserved | Design by Himanshu Mishra
+</footer>
+
+</div>
+
+</body>
+</html>
